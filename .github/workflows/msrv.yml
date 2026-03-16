@@ -14,10 +14,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Install Rust 1.74
         uses: dtolnay/rust-toolchain@1.74.0
+
+      - name: Regenerate lockfile for MSRV Cargo
+        run: |
+          rm -f Cargo.lock
+          cargo generate-lockfile
 
       - name: Run tests on MSRV
         run: cargo test --all-targets --all-features
