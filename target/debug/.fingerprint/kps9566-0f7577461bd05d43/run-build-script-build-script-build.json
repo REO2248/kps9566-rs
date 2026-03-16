@@ -1,0 +1,1 @@
+{"rustc":1842507548689473721,"features":"","declared_features":"","target":0,"profile":0,"path":0,"deps":[[5633299195375662631,"build_script_build",false,18280100982659811596]],"local":[{"RerunIfChanged":{"output":"debug\\build\\kps9566-0f7577461bd05d43\\output","paths":["data/KPS9566.TXT","data/EUCKP.TXT"]}}],"rustflags":[],"config":0,"compile_kind":0}

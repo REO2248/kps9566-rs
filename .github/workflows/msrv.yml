@@ -1,0 +1,23 @@
+name: MSRV
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  msrv:
+    name: Verify Rust 1.74
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Rust 1.74
+        uses: dtolnay/rust-toolchain@1.74.0
+
+      - name: Run tests on MSRV
+        run: cargo test --all-targets --all-features

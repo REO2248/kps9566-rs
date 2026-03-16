@@ -1,0 +1,12 @@
+[package]
+name = "kps9566"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.74"
+description = "KPS 9566 and EUC-KP character encoding support for Rust"
+
+[lints.rust]
+warnings = "deny"
+
+[lints.clippy]
+all = "deny"

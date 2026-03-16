@@ -1,0 +1,2 @@
+cargo:rerun-if-changed=data/KPS9566.TXT
+cargo:rerun-if-changed=data/EUCKP.TXT
